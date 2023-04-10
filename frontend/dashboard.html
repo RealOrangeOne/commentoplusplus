@@ -271,7 +271,7 @@
                         <div class="comment"><strong></strong></div>
                       </div>
                       <div class="mod-comments-row" v-for="comment in domains[cd].pending" v-if="domains[cd].pending.length > 0">
-                        <div class="comment"><a :href="'https://' + domains[cd].domain + '/' + comment.url">{{ comment.url }}</a></div>
+                        <div class="comment"><a :href="'https://' + domains[cd].domain + comment.url">{{ comment.url }}</a></div>
                         <div class="comment">{{ comment.creationDate }}</div>
                         <div class="comment">{{ domains[cd].pendingCommenters[comment.commenterHex].name }}</div>
                         <div class="comment"><span v-html="comment.html"></span></div>
